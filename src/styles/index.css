@@ -1,0 +1,187 @@
+@import "./tailwind.css";
+
+:root {
+  --white: #fbfbfb;
+  --white-80: #fbfbfb80;
+  --white-95: #fbfbfb95;
+  --bg-color: #1b1c1e;
+  --bg-color-80: #1b1c1e80;
+  --grey-600: #333333;
+  --grey-500: #555555;
+  --grey-500-20: #55555520;
+  --grey-400: #8b8b8b;
+  --grey-300: #a7afab;
+  --grey-200: #c2c2c2;
+  --grey-100: #efefef;
+  --grey-100-90: #efefef90;
+  --primary-300: #71ebbe;
+  --primary-300-50: #71ebbe80;
+  --primary-200: #8ef3bf;
+  --primary-100: #a2f1d6;
+  --red: #e42f42;
+}
+
+html.light {
+  --white: #1b1c1e;
+  --white-80: #1b1c1e80;
+  --white-95: #1b1c1e95;
+  --bg-color: #ffffff;
+  --bg-color-80: #f0f0f080;
+  --grey-100: #333333;
+  --grey-100-90: #33333390;
+  --grey-200: #555555;
+  --grey-200-20: #55555520;
+  --grey-300: #8b8b8b;
+  --grey-400: #a7afab;
+  --grey-500: #c2c2c2;
+  --grey-600: #efefef;
+  --primary-300: #2dc98e;
+  --primary-300-50: #2dc98e80;
+  --primary-200: #25a778;
+  --primary-100: #128963;
+  --red: #e42f42;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/src/assets/fonts/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/src/assets/fonts/Pretendard-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/src/assets/fonts/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/src/assets/fonts/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/src/assets/fonts/Pretendard-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  src: url("/src/assets/fonts/Pretendard-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("/src/assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+
+body {
+  font-family: "Pretendard";
+  background-color: var(--bg-color);
+  color: var(--white);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@theme {
+  --font-monument: "MonumentExtended", sans-serif;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--white-80);
+  z-index: 0;
+}
+
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--primary-300);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+  z-index: 1;
+}
+
+.nav-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-underline.active::before {
+  background-color: transparent;
+}
+
+.nav-underline.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition: none;
+}
+
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+.row-underline {
+  position: relative;
+  display: table-row;
+}
+.row-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--primary-300);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.7s ease-out;
+}
+
+.row-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
