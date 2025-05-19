@@ -1,0 +1,16 @@
+/* editor.css */
+.ProseMirror pre {
+  background-color: #ececec;
+  padding: 1em;
+  border-radius: 8px;
+  font-family: monospace;
+  white-space: pre-wrap; /* 자동 줄바꿈 */
+}
+
+.ProseMirror img {
+  max-width: 30%;
+}
+
+.ProseMirror {
+  height: 100%;
+}

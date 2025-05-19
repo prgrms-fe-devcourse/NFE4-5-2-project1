@@ -1,0 +1,152 @@
+@import 'tailwindcss';
+
+@layer components {
+  .button-style1 {
+    @apply w-[500px] h-[86px] text-white bg-[#1E293B] text-[23px] rounded-[5px] cursor-pointer;
+  }
+  .button-style2 {
+    @apply w-[126px] h-[50px] text-white bg-[#1E293B] text-[15px] rounded-[5px] cursor-pointer font-normal;
+  }
+  .button-style3 {
+    @apply w-[100px] h-[30px] text-white bg-[#1E293B] text-[15px] rounded-[5px] cursor-pointer font-normal;
+  }
+  .input-style1 {
+    @apply w-[500px] h-[86px] bg-[#ffffff] rounded-[5px] px-5 pt-5 text-[20px];
+  }
+
+  .button-edit {
+    @apply w-[90px] h-[30px] text-white bg-[#1E293B] text-[12px] rounded-[2px] cursor-pointer font-medium;
+  }
+  .input-edit-profile {
+    @apply w-[500px] h-[86px] bg-[#ffffff] text-[23px] rounded-[5px] px-10;
+  }
+  .input-profile {
+    @apply w-[300px] h-[37px] text-[15px] rounded-[5px] pl-[14px] outline-none border mt-[11px] border-[#E3E3E3] font-normal;
+  }
+  .postContent * {
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  /* 글 작성페이지 */
+  .prose {
+    min-width: 0;
+
+    height: 100%;
+  }
+  .prose .tiptap {
+    height: 100%;
+    min-height: 80px !important;
+  }
+  /* 투표글 작성 페이지 */
+  .edit-vote-box-text .prose {
+    height: auto;
+  }
+  /* 투표글 수정 페이지 */
+  .update-vote-no-edit .editor-box {
+    height: calc(100% - 16px) !important;
+  }
+  .update-vote-edit .editor-box {
+    height: auto !important;
+  }
+  .update-vote-edit .editor-box-text {
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .update-vote-edit .prose .tiptap {
+    min-height: 80px !important;
+  }
+  /* 반응형 */
+  @media (max-width: 1580px) {
+    .post-write-button {
+      width: 75px;
+      height: 75px;
+      right: -50px !important;
+      bottom: 75px !important;
+    }
+  }
+  @media (max-width: 1200px) {
+    /* 프로필 */
+    .profile-post-title {
+      max-width: 100% !important;
+      @apply items-end! px-1;
+    }
+    .profile-post-title > p {
+      @apply mb-0.5;
+    }
+  }
+  @media (max-width: 1024px) {
+    /* 컨텐츠영역 */
+    .main-layout-content {
+      transition: padding 0.5s;
+      @apply px-[30px]!;
+    }
+    /* 사이드바 */
+    .side-bar {
+      transition: margin 0.5s;
+      @apply -ml-[291px]!;
+    }
+    .side-bar.open {
+      @apply ml-0!;
+    }
+
+    .side-bar .ml-7 {
+      @apply ml-[25px]!;
+    }
+    .side-bar .w-\[291px\] {
+      @apply w-[260px]!;
+    }
+    .side-bar .pl-\[30px\] {
+      @apply pl-[25px]! pr-[25px]!;
+    }
+    .mobile-side-menu-button {
+      @apply block!;
+    }
+    /* 헤더 */
+    header {
+      @apply relative px-[30px]! z-20;
+    }
+
+    header h1 {
+      @apply ml-[40px];
+    }
+
+    /* 메인 인기글 */
+    .tabConstentItem {
+      transition: all 0.5s;
+      @apply basis-[100%]!;
+    }
+
+    /* 프로필 */
+    .profile-content {
+      display: block !important;
+    }
+    .profile-left {
+      display: block !important;
+      width: 100% !important;
+      border-right: 0 !important;
+    }
+    .profile-left {
+      display: flex !important;
+
+      align-items: center;
+      gap: 5%;
+    }
+    .profile-right {
+      display: block !important;
+    }
+
+    /* 글 작성 버튼 */
+    .post-write-button {
+      right: -20px !important;
+      bottom: 90px !important;
+    }
+  }
+  @media (max-width: 500px) {
+    .profile-left {
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      padding-bottom: 30px !important;
+    }
+  }
+}
