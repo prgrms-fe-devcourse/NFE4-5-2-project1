@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "KBO-Dia-Gothic";
+  src: url("../assets/fonts/KBO-Dia-Gothic_light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KBO-Dia-Medium";
+  src: url("../assets/fonts/KBO-Dia-Gothic_medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "KBO-Dia-Gothic";
+}
+
+.kbo-font-medium {
+  font-family: "KBO-Dia-Medium";
+}
+
+th {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  width: 99vw;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track a {
+  width: 175px;
+}
+
+.highlight-wrapper {
+  width: 99vw;
+}
+
+@media (max-width: 320px) {
+  .hiddenHeader {
+    display: none;
+  }
+}
