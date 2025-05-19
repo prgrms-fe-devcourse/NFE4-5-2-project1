@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer components {
+	.post-sub-title {
+		@apply block font-medium sm:text-lg text-base mb-4;
+	}
+
+	.post-input-title {
+		@apply block font-medium sm:text-[20px] text-base sm:mb-[10px] w-40;
+	}
+
+	.input-style {
+		@apply w-full sm:border-b sm:border-b-[#cdcdcd] 
+		sm:px-[10px] py-[15px] sm:max-w-none px-[14px] sm:bg-[#fff]
+		bg-[#f9f9f9] sm:dark:bg-[#1B1D22] dark:bg-[#333] sm:text-base text-sm
+		sm:dark:disabled:bg-[#1B1D22] sm:dark:disabled:opacity-60
+		dark:disabled:bg-[#242424] dark:disabled:opacity-60 sm:rounded-none rounded-[10px];
+	}
+
+	.input-style::placeholder {
+		color: #cdcdcd;
+	}
+
+	.cond-btn {
+		display: inline-block;
+		width: 80px;
+		text-align: center;
+		padding-block: 14px;
+		margin-right: 16px;
+		border-radius: 8px;
+		cursor: pointer;
+		border: 2px solid transparent;
+		background-color: #f3f4f6;
+	}
+
+	/* swiper navi */
+	.swiper-button-prev::after,
+	.swiper-button-next::after {
+		display: none;
+	}
+}

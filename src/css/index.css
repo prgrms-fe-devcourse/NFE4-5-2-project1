@@ -1,0 +1,115 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import "./tailwind.css";
+@import "./quill.css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+	@apply bg-white text-[#333] sm:overflow-y-scroll;
+}
+
+html.dark {
+	@apply bg-[#1B1D22] text-[#dadada];
+}
+
+body {
+	/* darkmode */
+	/* @apply text-[#333] bg-white dark:text-white dark:bg-[#1B1D22]; */
+	/* color: #333; */
+	font-family: "Noto Sans KR", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	zoom: 90%;
+}
+
+button {
+	@apply select-none;
+}
+
+.inputProps {
+	@apply pl-[48px] sm:pl-[54px] w-[360px] sm:w-full h-[60px] border border-[#616161] rounded-[10px]
+    text-[16px] text-[#333333] placeholder-[#616161]
+    focus:outline-none focus:border-[#06B796]
+    group-hover:border-[#06B796] group-hover:placeholder-[#06B796]
+    placeholder:transition-colors dark:text-[#dadada];
+}
+
+.iconProps {
+	@apply absolute left-4 top-1/2 -translate-y-1/2 w-[24px] h-[24px] bg-no-repeat;
+}
+
+.inputBirth {
+	@apply pl-[48px] sm:pl-[54px] w-[185px] sm:w-[226px] h-[60px] mr-[10px] sm:mr-[18px] border border-[#616161] rounded-[10px] 
+    text-[16px] placeholder-[#616161] 
+    focus:outline-none focus:border-[#06B796] 
+    group-hover:border-[#06B796] group-hover:placeholder-[#06B796]
+    placeholder:transition-colors;
+}
+
+.inputGender {
+	@apply w-[40px] sm:w-[50px] h-[60px] ml-[10px] sm:ml-[18px] border border-[#616161] rounded-[10px] 
+    text-center text-[16px] focus:outline-none focus:border-[#06B796];
+}
+
+.handleApply {
+	@apply cursor-pointer leading-3.5 rounded-lg px-[15px] py-2 text-white;
+}
+
+.sub_title_number {
+	@apply text-lg font-medium text-[#06b796] ml-2;
+}
+
+/* swiper pagination */
+.custom-bullet {
+	@apply inline-block w-[12px] h-[12px] bg-[#CDCDCD] rounded-full mx-[4px] opacity-100 transition-colors duration-300 cursor-pointer;
+}
+.custom-bullet-active {
+	@apply w-[36px] bg-[#06B796];
+}
+
+/* scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* 흰 배경 제거 */
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* 스크롤 막대 색상 */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background-color: #999999;
+	border-radius: 10px;
+}
+
+.custom-scrollbar.main-color::-webkit-scrollbar-thumb {
+	background-color: #06b796;
+}
+
+.none-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.Toastify__toast-container--top-center {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	align-items: center;
+}
+
+/* 반응형 640px 이하일 때  */
+@media (max-width: 639px) {
+	.custom-bullet {
+		background-color: #ffffff;
+		width: 8px;
+		height: 8px;
+		margin-left: 2px;
+	}
+
+	.custom-bullet-active {
+		background-color: #06b796;
+		width: 20px;
+	}
+}

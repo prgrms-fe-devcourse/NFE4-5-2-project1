@@ -1,0 +1,54 @@
+.ql-container {
+	@apply rounded-b-[10px] bg-[#F9F9F9] border-0! w-full dark:bg-[#333];
+}
+
+.ql-toolbar {
+	@apply rounded-t-[10px] bg-[#F9F9F9] border-0! border-b-[1px]! border-b-[#eee]! dark:bg-[#333];
+}
+
+.ql-editor {
+	@apply sm:text-lg w-full;
+	font-family: "Noto Sans KR", sans-serif !important;
+}
+
+.ql-editor img {
+	@apply max-w-none;
+}
+
+.ql-blank::before {
+	@apply not-italic! text-[#cdcdcd]!;
+}
+
+html.dark .ql-blank::before {
+	color: #616161 !important;
+}
+
+html.dark .ql-toolbar {
+	border-bottom-color: #9e9e9e !important;
+}
+
+html.dark .ql-toolbar .ql-stroke {
+	stroke: #9e9e9e !important;
+}
+
+html.dark .ql-picker-label::before {
+	color: #9e9e9e !important;
+}
+
+.ql-size-small {
+	@apply text-sm;
+}
+.ql-size-large {
+	@apply text-[27px];
+}
+.ql-size-huge {
+	@apply text-[45px];
+}
+
+.contents-wrapper ol {
+	@apply list-decimal pl-6;
+}
+
+.contents-wrapper ul {
+	@apply list-disc pl-6;
+}
