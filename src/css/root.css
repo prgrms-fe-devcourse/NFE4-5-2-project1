@@ -1,0 +1,142 @@
+/* src/main.tsx 또는 src/index.tsx */
+:root {
+  --color-main-navy: #063579;
+  --color-main-skyBlue: #60b5ff;
+  --color-main-blue: #3b82f6;
+  --color-lightGray: #e4e4e4;
+  --color-darkGray: #434343;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-darkNavy: #202e48;
+  --color-main-bg: #ffffff;
+
+  /* focus */
+  --color-lightGray-focus: #60b5ff;
+
+  /* hover */
+  --color-main-blue-hover: #063579;
+  --color-main-navy-hover: #0b4e9c;
+  --color-main-skyBlue-hover: #8ac8fb;
+  --color-red: #dc0000;
+
+  /* active */
+  --color-main-navy-active: #001a40;
+  --color-main-skyBlue-active: #3a94dc;
+
+  /* 헤더 */
+  --color-header: #f9fafb;
+
+  /* 사이드바 */
+  --color-sideBody: #001a40;
+  --color-notSelected: #989b9d;
+  --color-selected: #3b82f6;
+  --color-sidebar-text: #ffffff;
+
+  /* 알림 사이드바 */
+  --color-notice-bg: #ffffff;
+  --color-notice-text: #000000;
+
+  /* 검색 사이드바 */
+  --color-search-bg: #ffffff;
+  --color-search-text: #000000;
+
+  /* 게시글 작성 */
+  --color-write-main-text: #000000;
+  --color-tag: #777777;
+  --color-image-bg: #e4e4e4;
+
+  /* 게시글 */
+
+  /* 필터 */
+  --color-text-filter: #000000;
+  --color-cost-text: #202e48;
+
+  --color-post-bg: #ffffff;
+  --color-post-text: #000000;
+  --color-theme: #2a728c;
+  --color-title: #063579;
+  --color-subText: #838383;
+  --color-border: #ebebeb;
+
+  /* notFound */
+  --color-notFound: #000000;
+
+  /* 프로필 */
+  --color-profile-text: #000000;
+  --color-tag-bg: #ffffff;
+  --color-tag-text: #000000;
+
+  /* 로딩 */
+  --color-loading-bg: #ffffff;
+
+  /* 관리자 페이지 */
+  --color-auth-text: #000000;
+  --color-auth-channel-border: #000000;
+}
+
+.dark {
+  --color-main-navy: #063579;
+  --color-main-skyBlue: #60b5ff;
+  --color-main-blue: #3b82f6;
+  --color-lightGray: #e4e4e4;
+  --color-darkGray: #434343;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-darkNavy: #202e48;
+  --color-main-bg: #1d2635;
+
+  /* focus */
+  /* hover */
+  /* active */
+
+  /* 헤더 */
+  --color-header: #0f172a;
+
+  /* 사이드바 */
+  --color-sideBody: #0f172a;
+  --color-notSelected: #989b9d;
+  --color-selected: #3b82f6;
+  --color-sidebar-text: #ffffff;
+
+  /* 알림 사이드바 */
+  --color-notice-bg: #0f172a;
+  --color-notice-text: #ffffff;
+
+  /* 검색 사이드바 */
+  --color-search-bg: #0f172a;
+  --color-search-text: #ffffff;
+
+  /* 게시글 작성 */
+  --color-write-main-text: #ffffff;
+  --color-tag: #ffffff;
+  --color-image-bg: #ffffff;
+
+  /* 게시글 */
+
+  /* 필터 */
+  --color-text-filter: #ffffff;
+  --color-cost-text: #60b5ff;
+
+  --color-post-bg: #111827;
+  --color-post-text: #ffffff;
+  --color-theme: #070909;
+  --color-title: #60b5ff;
+  --color-subText: #ffffff;
+  --color-border: #a6a5a5;
+  --color-commentBox-open: #838383;
+
+  /* notFound */
+  --color-notFound: #ffffff;
+
+  /* 프로필 */
+  --color-profile-text: #ffffff;
+  --color-tag-bg: #0f172a;
+  --color-tag-text: #ffffff;
+
+  /* 로딩 */
+  --color-loading-bg: #1d2635;
+
+  /* 관리자 페이지 */
+  --color-auth-text: #ffffff;
+  --color-auth-channel-border: #ffffff;
+}
