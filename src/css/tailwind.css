@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-dark-bg: #121212;
+  --color-dark-card: #1e1e1e;
+  --color-dark-text: #e0e0e0;
+  --color-dark-border: #505050;
+  --color-dark-button: #3a3a3a;
+  --color-dark-accent: #a9907e;
+}
+
+.wrapper {
+  @apply w-[270px] sm:w-[270px] md:w-[555px] lg:w-[840px] xl:w-[1125px];
+}
+.card-list {
+  @apply flex flex-wrap justify-center gap-[15px];
+}

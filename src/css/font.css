@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Cafe24Simplehae';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cafe24 {
+  font-family: 'Cafe24Simplehae';
+  font-weight: normal;
+  font-style: normal;
+}
+.nanum-gothic-regular {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nanum-gothic-bold {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  transform: rotate(0.04deg);
+}
