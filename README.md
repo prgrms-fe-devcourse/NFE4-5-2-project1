@@ -64,13 +64,13 @@ v23.11.0
 
 <br/>
 
-|           [이현우](https://github.com/manto123123123)           |           [황수지](https://github.com/ssujissuji)           |           [강하영](https://github.com/Hayoung0708)           |          [이준수](https://github.com/dlakrp123)           |
-| :-------------------------------------------------------------: | :---------------------------------------------------------: | :----------------------------------------------------------: | :-------------------------------------------------------: | :--------------------------------------------------------: |
-| <img src="https://github.com/manto123123123.png" width="150px"> | <img src="https://github.com/ssujissuji.png" width="150px"> | <img src="https://github.com/Hayoung0708.png" width="150px"> | <img src="https://github.com/kyoeun01.png" width="150px"> | <img src="https://github.com/dlakrp123.png" width="150px"> |
-|               팀장, 포스트페이지,에디터페이지담당               |                           ~~담당                            |                            ~~담당                            |                          ~~담당                           |
+|           [이현우](https://github.com/manto123123123)           |           [황수지](https://github.com/ssujissuji)           |           [강하영](https://github.com/Hayoung0708)           |           [이준수](https://github.com/dlakrp123)           |
+| :-------------------------------------------------------------: | :---------------------------------------------------------: | :----------------------------------------------------------: | :--------------------------------------------------------: |
+| <img src="https://github.com/manto123123123.png" width="150px"> | <img src="https://github.com/ssujissuji.png" width="150px"> | <img src="https://github.com/Hayoung0708.png" width="150px"> | <img src="https://github.com/dlakrp123.png" width="150px"> |
+|              팀장, 포스트페이지, 에디터페이지 담당              |                 기획, 퍼블리싱, 라우터 작성                 |                    디자인, 기획, 퍼블리싱                    |             기획, 퍼블리싱, 와이어프레임 작성              |
 
-  <br/>
-  <br/>
+<br/>
+<br/>
 
 ---
 
