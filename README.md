@@ -52,11 +52,7 @@ v23.11.0
 
 ## 🎥 Demo 영상
 
-<!-- 비디오 파일을 `assets/demo.mp4` 경로에 추가한 뒤 사용하세요 -->
-
-<video src="src/assets/images/video.mp4" controls width="600">
-  해당 브라우저는 video 태그를 지원하지 않습니다.
-</video>
+https://www.youtube.com/watch?v=TQm4Fp8O4m8
 
 ---
 
